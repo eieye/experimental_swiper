@@ -7,7 +7,7 @@ Built on\
  * https://swiperjs.com
  * Copyright 2014-2023 Vladimir Kharlampidi
  * Released under the MIT License
- * Released on: October 26, 2023
+ * Released on: October 26, 2023\
 . . .\
 Run in a browser (Firefox or Chrome) on a mobile device (from server) or on desktop in browser dev tools touch simulation mode.\
 Features of "2f-swipe_and_1f-trace" will be limited on desktop to swiping #when touch sim is off# resp. tracing #when touch sim is on#.\
@@ -17,5 +17,7 @@ Refresh page to enable tracing after switching touch sim on. On mobile shake to 
 Full feature demo only on mobile.\
 . . .\
 Demos\
-[swipe and trace](https://www.jenskreitmeyer.de/alpha/SWIPER/SHADOW/swiper.html)\
-[swipe only](https://www.jenskreitmeyer.de/alphasprint/SWIPER_BASISVERSIONEN/SWIPER1103/core2Fonly.html)\
+[swipe and trace](https://www.jenskreitmeyer.de/alpha/SWIPER/SHADOW/swiper.html)
+
+[swipe only](https://www.jenskreitmeyer.de/alphasprint/SWIPER_BASISVERSIONEN/SWIPER1103/core2Fonly.html)
+
