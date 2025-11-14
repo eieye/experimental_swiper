@@ -1,0 +1,241 @@
+/* REVIEW/STRIP-DOWN TUE 13-JUN-23 */
+/* ADDED STYLE "TYPEBOX" FROM "ANFANGSSCHRIFT" 13-AUG-23 */
+/* TUE 15-AUG-23 */
+/* SCALING TO FULL SCREEN-HEIGHT WITH FIXED WIDTH (FLEX-SHRINK ZERO) FOR SVG-EL */
+/* MON 28-AUG-23 // TEMP UIBTM NEEDS LAYER-FIX */
+/* FRI 10-NOV-23 */
+/* REVIEWED 31OCT25 / COPY OF "IMAGE WEB 2025OCT29 ALPHA SWIPER SHADOW" */
+
+																				  	/* BASE */
+		/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+	--svgstroke: 'computed'; /* INITVIEW LINE#45# */
+	--uitxt:			red;
+	--uiprompts:	blue;
+	--helptxt:		gray;
+ /* ##CONTINUE## FOR MAX WIDTH TO SCREEN */
+/* 	--glyphscale: 'computed'; */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: rgba(255 255 250 / 1); /* POSTIT TINT */
+	font-family: system-ui;
+	font-weight: 400; /* 700 IS SEMIBOLD */
+	letter-spacing: 0.5px;
+	user-select: none;
+}
+
+.shadowmonitor {
+	position: absolute; 
+	top: 50vh;
+	left: 0px;
+	font-size: 0.11em; /* ##WTF## INHERITS FROM "SWIPER-SLIDE" IN "SWIPER.HTML" */
+	text-align: left;
+	color: orange;
+}
+
+svg {
+	fill: none;
+/* ##TEMP## IS CLIPPING WIDER GLYPHS ... */
+	height: 100vh;
+/* 	width: var(--glyphscale)vw; */ /*  ##CONTINUE##  */
+	flex-shrink: 0; /* "0" = NOSCALE "1" = FITTOWIDTH */
+}
+
+/* GLYPH TEMPLATE */
+.template {
+	fill: none;
+	stroke: rgba(0 0 0 / .1);
+	stroke-width: var(--svgstroke); /* UNIT-LESS */
+	stroke-linecap: square;
+	stroke-linejoin: round;
+}
+
+/* FROM "ANFANGSSCHRIFT" */
+														/* #### NEW IN "SHADOW.JS" #### */
+														/* VIEWBOX IS HIGHER THAN TYPEBOX */
+														/* TO ALLOW FOR OVERSHOOT DESCENDERS */
+  .typebox rect {
+    fill: none;
+    stroke: rgba(0 0 255 / .5);
+    stroke-width: 1px;
+    /* stroke-dasharray: 5; */
+  }
+  .typebox line {
+    fill: none;
+    stroke: rgba(0 255 0 / 1);
+    stroke-width: .5px;
+  }
+
+
+
+
+
+
+
+																  				/* CONTAINER-DIVS */
+		/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* 25-APR-23 */
+/* FOR "MTGB" (=COMPOSITE GRPHMS) GROUP (=WRITE) GLYPHS TO THE SAME TRACK BY IMPORT-PARSER */
+
+
+/* CONTAINER TOUCH TRACING-AREA (LAYERS) */
+.template_wrapper {
+	border: 0px dashed rgba(255 0 255 / .5);
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	touch-action: none;
+}
+
+
+
+
+
+
+																					/* VIEW LAYERS */
+		/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* PATH-SAMPLES (OUTLINES) // DEBUGGING ONLY */
+.quped {
+	fill: transparent;
+	stroke: rgba(255 0 255 / .2);
+	stroke-width: 3px;
+	/*stroke-dasharray: 1 1;*/
+}
+
+																	/* TOUCH-REGISTERING ELEMENT */
+														/* ##TBD## MUST HAVE FILL BUT "INVISIBLE" */
+.touchel {
+	fill: rgba(0 255 255 / .5);
+	stroke: rgba(220 220 220 / 1); /* TEMP GLYPH-COL */
+	stroke-width: 1px;
+	/* stroke-dasharray: 1 1; */
+}
+
+
+																							/* TRACE */
+/* SVG-POLYLINE  */
+.tracing {
+	fill: none;
+	stroke: hsla(0 0% 50% / 1); /* GRAY BUT NO TRANSPARENCY */
+	stroke-width: var(--svgstroke);
+	stroke-linecap: round; /* butt square round */
+	stroke-linejoin: round; /* bevel miter round */
+}
+.tracing .ontrack {
+	stroke: hsla(120 100% 50% / 0.5);
+}
+.tracing .offtrack {
+	stroke: hsla(0 100% 50% / 0.1);
+}
+
+
+/* SVG-POLYLINE  */
+.animation {
+	fill: none;
+	stroke: rgb(255, 150, 255, 1); /* ANIM BTN COL */
+	stroke-width: var(--svgstroke);
+	stroke-linecap: round; /* butt square round */
+	stroke-linejoin: round; /* bevel miter round */
+}
+
+
+
+																				/* LOG AND RESET */
+		/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* CONTAINER */
+.uitop {
+	border: 1px dashed rgba(255 0 255 / 1);
+	/* width: 100vw; */
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+	margin: 0 0 0 0; /* TRBL */
+ 	display: flex;
+ 	flex-direction: row;
+ 	touch-action: none;
+}
+
+.uibtm {
+	border: 1px dashed rgba(255 0 255 / 1);
+	fill: none;
+	/* width: 25vw; */
+	white-space: nowrap;
+ 	position: absolute;
+ 	top: calc(100vh - 92px); /* MINUS BTN HEIGHT MARGIN BOX BORDER */
+	margin: 0 0 0 0; /* TRBL */
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-shrink: 0;
+ 	touch-action: none;
+}
+
+.log {
+	font-family: "Menlo", systemUI, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	border: 1px solid yellow;
+	width: 80%;
+	user-select: none;
+}
+
+/* ELEMENT */
+button {
+	margin: 10px 0 0 10px; /* TRBL */
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Menlo", system-UI, sans-serif;
+	font-size: 16px;
+	user-select: none;
+	touch-action: none; /* REDUNDANT */
+}
+
+.resetbtn {
+  background-color: rgb(100, 100, 100, 0.2); /* 255, 190, 0, .5 */
+  color: black;
+}
+.resetbtn:active {
+  background-color: rgba(250, 100, 100, 1);
+  color: white;
+}
+
+.filebtn {
+  background-color: rgb(100, 100, 100, 0.2); /* 150, 230, 100, .5 */
+  color: black;
+}
+.filebtn:active {
+  background-color: rgb(150, 230, 100, 1);
+  color: white;
+}
+
+.animbtn {
+  background-color: rgb(100, 100, 100, 0.2); /* 255, 150, 255, 1 */
+  color: black;
+}
+.animbtn:active {
+  background-color: rgb(255, 150, 255, 1);
+  color: white;
+}
+
+.audiobtn {
+  background-color: rgb(100, 100, 100, 0.2); /* 50, 150, 255, 0.5 */
+  color: black;
+}
+.audiobtn:active {
+  background-color: rgb(50, 150, 255, 1);
+  color: white;
+}
+

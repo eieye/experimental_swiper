@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TEST SHADOW9 PLUS // #DUMMY# FULL NAVIGATION // 21-DEC-24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<!-- BUILT ON ##TEST SHADOW (9) SWIPER // SAT 11-NOV-23 // (REVIEW 19-SEP-24 WORKING CUSTOM-EL/COMPONENT "MAINREDUX 11-NOV-23") ## -->
+<!-- REVIEWED 31OCT25 / COPY OF "IMAGE WEB 2025OCT29 ALPHA SWIPER SHADOW" -->
+	<!-- EXCEPT LINES 96-113 BUTTON ADDED IN THIS */
+
+
+<!-- STILL FREAKING OUT IF THESE STYLES ARE #NOT# LOCAL (IN THIS HEADER) OR #MISSING# -->
+	<!-- <link rel="stylesheet" href="./localadditions.css" /> -->
+	<link rel="stylesheet" href="./swiper.css" />
+	<script src="./TRACER/shake.js"></script>
+	<script src="./TRACER/glyphsinventory.js"></script>
+	<!-- LINK SWIPER AND SHADOW @LINE ##204## -->
+	<!-- SHADOW-DOM SCRIPTS IN SCRIPT "SHADOW.JS" @LINE ##46## -->
+
+																	<!-- LOCAL ADDITIONAL STYLES -->
+<style>
+/* ORIGINAL FROM DEMO */
+html,
+body {
+	position: relative;
+	height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ORIGINAL FROM DEMO */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+	font-family: system-ui, sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 3em;
+	background: rgba(252 252 252 / 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ADDED // CURRENTLY UNUSED */
+/* 
+.swiper-slide {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+}
+ */
+
+/* ORIGINAL FROM DEMO // CURRENTLY UNUSED */
+/*
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+*/
+
+											/* ADD MANUALLY TO ROW OR COLUMN TO STYLE BKGRND */
+									/* (THESE LOCAL STYLES APPLY TO ALL INSTANCES OF CLASSES) */
+.swiper-h {
+	background: rgba(255 150 255 / 1);
+}
+.swiper-v {
+	background: rgba(100 255 100 / 1);
+}
+
+																/* TEST DISPLAY TOUCH_STATES */
+.monitor {
+	display: block;
+	position: absolute;
+	z-index: 100;
+	/*width: 50vw;*/
+	/*height: 10vh;*/
+	width: auto;
+	height: auto;
+	border: 3px dotted orange;
+	font-family: system-ui, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0 100 255 / .75);
+	user-select: none;
+}
+.monitor3 {
+	top: 12vh;
+	border: 3px dotted orange;
+}
+.btn {
+	display: block;
+	position: absolute;
+	bottom: 2vh;
+	z-index: 100;
+	/*width: 50vw;*/
+	/*height: 10vh;*/
+/* 
+	width: auto;
+	height: auto;
+	border: 3px dotted orange;
+	font-family: system-ui, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0 100 255 / .75);
+	user-select: none;
+ */
+}
+
+
+</style>
+  </head>
+
+
+  <body id="app">
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+															<!-- TEST DISPLAY TOUCH_STATES -->
+		<div id="monitor" class="monitor"></div>
+		<div id="monitor3" class="monitor monitor3">INIT</div>
+		<div id="monitorbtn" class="monitor btn">(CLEAR)</div>
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+																 <!-- (SWIPER CONTAINER = BODY) -->
+<!-- ROW -->
+    <div class="swiper row1 swiper-h">
+      <div class="swiper-wrapper">
+																		<!-- HARD CODED SLIDES -->
+        <div class="swiper-slide">
+<!-- COL -->
+          <div class="swiper col1 swiper-v">
+            <div class="swiper-wrapper">
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+																			<!-- SLIDES COLUMN -->
+              <div class="swiper-slide" id="col1slide1">
+              	<!-- #ATTACH# SHADOW DOM -->
+              </div>
+              <div class="swiper-slide">S2</div>
+              <div class="swiper-slide">S3</div>
+
+
+																		<!-- END SLIDES COLUMN -->
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+            </div>
+          </div>
+<!-- END COL -->
+        </div>
+
+
+
+        <div class="swiper-slide">
+          <div class="swiper col2" style="background: rgba(110 210 255 / 1);">
+            <div class="swiper-wrapper">
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+																			<!-- SLIDES COLUMN -->
+              <div class="swiper-slide">Aa</div>
+              <div class="swiper-slide">Aa2</div>
+              <div class="swiper-slide">Aa3</div>
+
+																		<!-- END SLIDES COLUMN -->
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="swiper-slide">
+          <div class="swiper col3" style="background: rgba(255 200 35 / 1);">
+            <div class="swiper-wrapper">
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+																			<!-- SLIDES COLUMN -->
+              <div class="swiper-slide">Bb</div>
+              <div class="swiper-slide">Bb2</div>
+              <div class="swiper-slide">Bb3</div>
+
+																		<!-- END SLIDES COLUMN -->
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="swiper-slide">
+          <div class="swiper col4" style="background: rgba(250 250 25 / 1);">
+            <div class="swiper-wrapper">
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+																			<!-- SLIDES COLUMN -->
+              <div class="swiper-slide">Cc</div>
+              <div class="swiper-slide">Cc2</div>
+              <div class="swiper-slide">Cc3</div>
+
+																		<!-- END SLIDES COLUMN -->
+<!-- / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / -->
+            </div>
+          </div>
+        </div>
+																	<!-- END HARD CODED SLIDES -->
+
+      </div>
+			<!-- <DIV> OPT PAGINATION HERE </DIV> -->
+
+    </div>
+<!-- END ROW -->
+
+
+
+<!-- SWIPER1103 // LINE ##204## -->
+<script src="./swiper.js"></script>
+<script src="./shadow.js"></script>
+
+
+
+																	<!-- INITIALIZE SWIPERS -->
+<!-- ======================================================================================== -->
+    <script>
+      var swiper0 = new Swiper(".row1", {
+        spaceBetween: 50, // ROW/HORIZONTAL
+        loop: true
+      });
+
+      var swiper1 = new Swiper(".col1", {
+        direction: "vertical",
+        spaceBetween: 50 // COLUMN/VERTICAL
+      });
+
+      var swiper2 = new Swiper(".col2", {
+        direction: "vertical",
+        spaceBetween: 50
+      });
+
+      var swiper3 = new Swiper(".col3", {
+        direction: "vertical",
+        spaceBetween: 50
+      });
+
+      var swiper4 = new Swiper(".col4", {
+        direction: "vertical",
+        spaceBetween: 50
+      });
+    </script>
+
+  </body>
+</html>
