@@ -9,7 +9,7 @@ Copyright 2014-2023 Vladimir Kharlampidi\
 Released under the MIT License\
 Released on: October 26, 2023\
 . . .\
-Run in a browser (tested with Firefox and Chrome) on a mobile device (from server) or from your desktop in browser dev tools in touch simulation mode.\
+Run in a browser (tested with Firefox and Chrome) on a mobile device (from server) or from your desktop with dev tools in touch simulation mode.\
 Features of "2f-swipe_and_1f-trace" will be limited on desktop to swiping #when touch sim is off# resp. tracing #when touch sim is on#.\
 Refresh page to enable tracing after switching to touch sim.\
 On mobile shake to clear trace or hit "clear" (as on desktop).\
