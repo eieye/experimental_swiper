@@ -19,5 +19,9 @@ Full feature demo only on mobile.\
 . . .\
 Demos\
 [swipe and trace](https://www.jenskreitmeyer.de/alpha_next_gen/swiper/2F-SWIPE_1F-TRACE/swiper9.html)\
+<img width="318" height="312" alt="2f-swipe_1f-trace" src="https://github.com/user-attachments/assets/62f87f81-2b20-4b76-bfba-c8b913909315" />
+
 [swipe only](https://www.jenskreitmeyer.de/alpha_next_gen/swiper/2F-SWIPE/core2Fonly.html)\
+<img width="310" height="310" alt="2f-swipe" src="https://github.com/user-attachments/assets/650ceeb7-bc72-4bcf-96c0-e410ac27201d" />
+
 
