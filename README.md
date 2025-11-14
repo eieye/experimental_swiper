@@ -1,7 +1,7 @@
 An experimental implementation for multi-touch interaction in Swiper 11.0.3\
 for separation of 1-finger and 2-finger touch on mobile.\
-Built on\
 . . .\
+Built on\
 Swiper 11.0.3
 Most modern mobile touch slider and framework with hardware accelerated transitions
 https://swiperjs.com
@@ -17,6 +17,6 @@ Refresh page to enable tracing after switching touch sim on. On mobile shake to 
 Full feature demo only on mobile.\
 . . .\
 Demos\
-[swipe and trace](https://www.jenskreitmeyer.de/alpha/SWIPER/SHADOW/swiper.html)
+[swipe and trace](https://www.jenskreitmeyer.de/alpha/SWIPER/SHADOW/swiper.html)\
 [swipe only](https://www.jenskreitmeyer.de/alphasprint/SWIPER_BASISVERSIONEN/SWIPER1103/core2Fonly.html)
 
