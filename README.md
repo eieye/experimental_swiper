@@ -4,7 +4,7 @@ for separation of 1-finger and 2-finger touch on mobile.\
 Built on\
 Swiper 11.0.3\
 Most modern mobile touch slider and framework with hardware accelerated transitions\
-https://swiperjs.com\
+https://swiperjs.com
 Copyright 2014-2023 Vladimir Kharlampidi\
 Released under the MIT License\
 Released on: October 26, 2023\
