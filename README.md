@@ -18,6 +18,6 @@ On mobile shake to clear trace or hit "clear" (as on desktop).\
 Full feature demo only on mobile.\
 . . .\
 Demos\
-[swipe and trace](https://www.jenskreitmeyer.de/alpha/SWIPER/SHADOW/swiper.html)\
-[swipe only](https://www.jenskreitmeyer.de/alphasprint/SWIPER_BASISVERSIONEN/SWIPER1103/core2Fonly.html)
+[swipe and trace](https://www.jenskreitmeyer.de/alpha_next_gen/swiper/2F-SWIPE_1F-TRACE/swiper9.html)\
+[swipe only](https://www.jenskreitmeyer.de/alpha_next_gen/swiper/2F-SWIPE/core2Fonly.html)\
 
