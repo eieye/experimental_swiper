@@ -2,11 +2,11 @@ An experimental implementation for multi-touch interaction in Swiper 11.0.3\
 for separation of 1-finger and 2-finger touch on mobile.\
 . . .\
 Built on\
-Swiper 11.0.3
-Most modern mobile touch slider and framework with hardware accelerated transitions
-https://swiperjs.com
-Copyright 2014-2023 Vladimir Kharlampidi
-Released under the MIT License
+Swiper 11.0.3\
+Most modern mobile touch slider and framework with hardware accelerated transitions\
+https://swiperjs.com\
+Copyright 2014-2023 Vladimir Kharlampidi\
+Released under the MIT License\
 Released on: October 26, 2023\
 . . .\
 Run in a browser (Firefox or Chrome) on a mobile device (from server) or on desktop in browser dev tools touch simulation mode.\
